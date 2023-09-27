@@ -1,0 +1,348 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\TCPDemonstrator_VS2008.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\TCPDemonstrator_VS2008.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_TCPDEMONSTRATOR_VS2008_DIALOG DIALOGEX 0, 0, 157, 90
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Snakes & Ladder Game"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Start Client",IDC_BUTTON_CLIENT,91,8,56,35
+    PUSHBUTTON      "Start Server",IDC_BUTTON_SERVER,10,8,56,35
+    PUSHBUTTON      "Cancel",IDCANCEL,21,60,118,16
+END
+
+IDD_TCP_SERVER_DIALOG DIALOGEX 0, 0, 140, 149
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "Snakes & Ladder Game Server"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Cancel",IDCANCEL,30,131,77,14
+    PUSHBUTTON      "Shutdown Server",ID_CLOSE,30,110,77,14
+    LTEXT           "Port",IDC_STATIC,6,20,17,8
+    LTEXT           "Local IP address",IDC_STATIC,6,9,53,8
+    EDITTEXT        IDC_ADDRESS,66,7,67,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Number of connected clients",IDC_STATIC,12,57,92,8
+    EDITTEXT        IDC_CONNECTED_COUNT,109,56,18,12,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "Enable Server",IDC_ENABLE_SERVER,30,35,77,14
+    EDITTEXT        IDC_EDIT_PORT,24,19,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_RECEIVED_MESSAGE,7,86,127,14,ES_AUTOHSCROLL
+    LTEXT           "Latest message",IDC_STATIC,41,75,51,8
+END
+
+IDD_TCP_CLIENT_DIALOG DIALOGEX 0, 0, 433, 301
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "Snakes & Ladder Game Client"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Cancel",IDCANCEL,135,280,56,14
+    LTEXT           "Server IP address:",IDC_STATIC,6,22,61,8
+    EDITTEXT        IDC_ADD_1,69,20,20,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ADD_2,100,20,20,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ADD_3,132,20,20,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ADD_4,164,20,20,12,ES_AUTOHSCROLL
+    LTEXT           ".",IDC_STATIC,92,21,8,8
+    LTEXT           ".",IDC_STATIC,124,21,8,8
+    LTEXT           ".",IDC_STATIC,156,21,8,8
+    LTEXT           "Port:",IDC_STATIC,6,36,17,8
+    PUSHBUTTON      "Connect",IDC_CONNECT,129,36,56,14
+    PUSHBUTTON      "Disconnect",IDC_Disconnect,59,36,56,14
+    EDITTEXT        IDC_MESSAGE_TEXT,13,146,151,19,ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_MESSAGE_NUMBER,143,167,31,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Message number (as sent by Server):",IDC_STATIC,13,168,122,8
+    GROUPBOX        "Clients Connected",IDC_STATIC,7,136,197,46
+    EDITTEXT        IDC_EDIT_PORT,25,34,27,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SEND,11,244,150,23,ES_AUTOHSCROLL
+    PUSHBUTTON      "Send",IDC_BUTTON_SEND,164,251,37,14
+    CONTROL         135,IDC_STATIC_BOARD,"Static",SS_BITMAP | SS_RIGHTJUST,227,15,200,198
+    CONTROL         "",IDC_STATIC_TOKEN_1,"Static",SS_BITMAP,241,197,15,13
+    CONTROL         "",IDC_STATIC_TOKEN_2,"Static",SS_BITMAP,265,197,15,13
+    CONTROL         "",IDC_STATIC_TOKEN_3,"Static",SS_BITMAP,289,197,15,13
+    CONTROL         "",IDC_STATIC_TOKEN_4,"Static",SS_BITMAP,313,197,15,13
+    CONTROL         "",IDC_STATIC_TOKEN_5,"Static",SS_BITMAP,337,197,15,13
+    CONTROL         "",IDC_STATIC_TOKEN_6,"Static",SS_BITMAP,361,197,15,13
+    CONTROL         "",IDC_STATIC_TOKEN_7,"Static",SS_BITMAP,383,197,15,13
+    CONTROL         "",IDC_STATIC_TOKEN_8,"Static",SS_BITMAP,409,197,15,13
+    CONTROL         "",IDC_STATIC_TOKEN_9,"Static",SS_BITMAP,241,173,15,13
+    CONTROL         "",IDC_STATIC_TOKEN_10,"Static",SS_BITMAP,265,173,15,13
+    CONTROL         "",IDC_STATIC_TOKEN_11,"Static",SS_BITMAP,289,173,15,13
+    CONTROL         "",IDC_STATIC_TOKEN_12,"Static",SS_BITMAP,313,173,15,13
+    CONTROL         "",IDC_STATIC_TOKEN_13,"Static",SS_BITMAP,337,173,15,13
+    CONTROL         "",IDC_STATIC_TOKEN_14,"Static",SS_BITMAP,361,173,15,13
+    CONTROL         "",IDC_STATIC_TOKEN_15,"Static",SS_BITMAP,383,173,15,13
+    CONTROL         "",IDC_STATIC_TOKEN_16,"Static",SS_BITMAP,409,173,15,13
+    CONTROL         "",IDC_STATIC_TOKEN_17,"Static",SS_BITMAP,241,152,15,13
+    CONTROL         "",IDC_STATIC_TOKEN_18,"Static",SS_BITMAP,265,149,15,13
+    CONTROL         "",IDC_STATIC_TOKEN_19,"Static",SS_BITMAP,289,149,15,13
+    CONTROL         "",IDC_STATIC_TOKEN_20,"Static",SS_BITMAP,313,149,15,13
+    CONTROL         "",IDC_STATIC_TOKEN_21,"Static",SS_BITMAP,337,149,15,13
+    CONTROL         "",IDC_STATIC_TOKEN_22,"Static",SS_BITMAP,361,149,15,13
+    CONTROL         "",IDC_STATIC_TOKEN_23,"Static",SS_BITMAP,383,149,15,13
+    CONTROL         "",IDC_STATIC_TOKEN_24,"Static",SS_BITMAP,409,149,15,13
+    CONTROL         "",IDC_STATIC_TOKEN_25,"Static",SS_BITMAP,239,131,15,13
+    CONTROL         "",IDC_STATIC_TOKEN_26,"Static",SS_BITMAP,263,131,15,13
+    CONTROL         "",IDC_STATIC_TOKEN_27,"Static",SS_BITMAP,287,131,15,13
+    CONTROL         "",IDC_STATIC_TOKEN_28,"Static",SS_BITMAP,311,131,15,13
+    CONTROL         "",IDC_STATIC_TOKEN_29,"Static",SS_BITMAP,335,128,15,13
+    CONTROL         "",IDC_STATIC_TOKEN_30,"Static",SS_BITMAP,359,128,15,13
+    CONTROL         "",IDC_STATIC_TOKEN_31,"Static",SS_BITMAP,381,128,15,13
+    CONTROL         "",IDC_STATIC_TOKEN_32,"Static",SS_BITMAP,407,128,15,13
+    CONTROL         "",IDC_STATIC_TOKEN_33,"Static",SS_BITMAP,241,107,15,13
+    CONTROL         "",IDC_STATIC_TOKEN_34,"Static",SS_BITMAP,265,104,15,13
+    CONTROL         "",IDC_STATIC_TOKEN_35,"Static",SS_BITMAP,289,104,15,13
+    CONTROL         "",IDC_STATIC_TOKEN_36,"Static",SS_BITMAP,313,104,15,13
+    CONTROL         "",IDC_STATIC_TOKEN_37,"Static",SS_BITMAP,337,104,15,13
+    CONTROL         "",IDC_STATIC_TOKEN_38,"Static",SS_BITMAP,361,104,15,13
+    CONTROL         "",IDC_STATIC_TOKEN_39,"Static",SS_BITMAP,383,104,15,13
+    CONTROL         "",IDC_STATIC_TOKEN_40,"Static",SS_BITMAP,407,104,15,13
+    CONTROL         "",IDC_STATIC_TOKEN_41,"Static",SS_BITMAP,241,88,15,13
+    CONTROL         "",IDC_STATIC_TOKEN_42,"Static",SS_BITMAP,265,85,15,13
+    CONTROL         "",IDC_STATIC_TOKEN_43,"Static",SS_BITMAP,313,85,15,13
+    CONTROL         "",IDC_STATIC_TOKEN_44,"Static",SS_BITMAP,291,85,15,13
+    CONTROL         "",IDC_STATIC_TOKEN_45,"Static",SS_BITMAP,337,85,15,13
+    CONTROL         "",IDC_STATIC_TOKEN_46,"Static",SS_BITMAP,361,85,15,13
+    CONTROL         "",IDC_STATIC_TOKEN_47,"Static",SS_BITMAP,383,85,15,13
+    CONTROL         "",IDC_STATIC_TOKEN_48,"Static",SS_BITMAP,407,85,15,13
+    CONTROL         "",IDC_STATIC_TOKEN_49,"Static",SS_BITMAP,241,64,15,13
+    CONTROL         "",IDC_STATIC_TOKEN_50,"Static",SS_BITMAP,265,61,15,13
+    CONTROL         "",IDC_STATIC_TOKEN_51,"Static",SS_BITMAP,289,61,15,13
+    CONTROL         "",IDC_STATIC_TOKEN_52,"Static",SS_BITMAP,313,61,15,13
+    CONTROL         "",IDC_STATIC_TOKEN_53,"Static",SS_BITMAP,337,61,15,13
+    CONTROL         "",IDC_STATIC_TOKEN_54,"Static",SS_BITMAP,361,61,15,13
+    CONTROL         "",IDC_STATIC_TOKEN_55,"Static",SS_BITMAP,383,61,15,13
+    CONTROL         "",IDC_STATIC_TOKEN_56,"Static",SS_BITMAP,409,61,15,13
+    CONTROL         "",IDC_STATIC_TOKEN_57,"Static",SS_BITMAP,243,43,15,13
+    CONTROL         "",IDC_STATIC_TOKEN_58,"Static",SS_BITMAP,265,40,15,13
+    CONTROL         "",IDC_STATIC_TOKEN_59,"Static",SS_BITMAP,289,40,15,13
+    CONTROL         "",IDC_STATIC_TOKEN_60,"Static",SS_BITMAP,313,40,15,13
+    CONTROL         "",IDC_STATIC_TOKEN_61,"Static",SS_BITMAP,337,40,15,13
+    CONTROL         "",IDC_STATIC_TOKEN_62,"Static",SS_BITMAP,361,40,15,13
+    CONTROL         "",IDC_STATIC_TOKEN_63,"Static",SS_BITMAP,383,40,15,13
+    CONTROL         "",IDC_STATIC_TOKEN_64,"Static",SS_BITMAP,407,40,15,13
+    CONTROL         136,IDC_STATIC_DICE,"Static",SS_BITMAP,232,245,33,30
+    PUSHBUTTON      ".:::Roll The Dice:::.",IDC_BUTTON_DICE,285,277,69,14
+    EDITTEXT        IDC_EDIT1,397,219,24,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Total Score:",IDC_STATIC,354,221,40,8
+    GROUPBOX        "Connection",IDC_STATIC,4,11,202,45
+    GROUPBOX        "Send Message",IDC_STATIC,6,233,199,42
+    PUSHBUTTON      "Register",IDC_BUTTON_REG,12,111,54,14
+    EDITTEXT        IDC_EDIT2,12,84,54,14,ES_AUTOHSCROLL
+    LTEXT           "Enter Player Name:",IDC_STATIC,11,72,63,8
+    LISTBOX         IDC_LIST1,79,83,48,43,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Select && Start",IDC_BUTTON_SELECT,137,83,63,14
+    LTEXT           "Available Players:",IDC_STATIC,77,72,58,8
+    LTEXT           "Playing Against:",IDC_STATIC,144,104,52,8
+    EDITTEXT        IDC_EDIT3,142,114,52,14,ES_AUTOHSCROLL | ES_READONLY
+    GROUPBOX        "Player Selection",IDC_STATIC,4,58,200,74
+    EDITTEXT        IDC_EDIT4,396,236,25,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Client ID:",IDC_STATIC,361,238,31,8
+    EDITTEXT        IDC_EDIT6,11,199,152,23,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT5,148,65,40,14,ES_AUTOHSCROLL | ES_READONLY | NOT WS_VISIBLE
+    GROUPBOX        "Received Message",IDC_STATIC,7,185,197,46
+    EDITTEXT        IDC_EDIT7,380,255,43,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Who's Turn?",IDC_STATIC,339,258,40,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "TCPDemonstrator_VS2008.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "TCPDemonstrator_VS2008.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_TCPDEMONSTRATOR_VS2008_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 150
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+
+    IDD_TCP_SERVER_DIALOG, DIALOG
+    BEGIN
+    END
+
+    IDD_TCP_CLIENT_DIALOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 430
+        BOTTOMMARGIN, 297
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDP_SOCKETS_INIT_FAILED "Windows sockets initialization failed."
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United Kingdom) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENG)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_UK
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_BOARD        BITMAP                  "board.bmp"
+IDB_BITMAP_DICE_1       BITMAP                  "dice\\d1.bmp"
+IDB_BITMAP_DICE_2       BITMAP                  "dice\\d2.bmp"
+IDB_BITMAP_DICE_3       BITMAP                  "dice\\d3.bmp"
+IDB_BITMAP_DICE_4       BITMAP                  "dice\\d4.bmp"
+IDB_BITMAP_DICE_5       BITMAP                  "dice\\d5.bmp"
+IDB_BITMAP_DICE_6       BITMAP                  "dice\\d6.bmp"
+IDB_BITMAP_TOKEN        BITMAP                  "dice\\player.bmp"
+IDB_BITMAP_DOT          BITMAP                  "dice\\dot.bmp"
+#endif    // English (United Kingdom) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\TCPDemonstrator_VS2008.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
